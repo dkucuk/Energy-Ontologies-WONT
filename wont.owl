@@ -1,0 +1,1050 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Ontology1318785573683 "http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Ontology1318785573683="http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&Ontology1318785573683;synonymSet"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#anemometer_measures -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;anemometer_measures">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Anemometer"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Speed"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;measures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#causes -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;causes">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Power"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#controls -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;controls">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Control_System"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#forecast_generates -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;forecast_generates">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Forecast_Power"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Forecast_System"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;generates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#forecast_utilizes -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;forecast_utilizes">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Forecast_System"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Numerical_Weather_Prediction"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Physical_Model"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Statistical_Model"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;utilizes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#generates -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;generates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#has -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;has">
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#humidity_sensor_measures -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;humidity_sensor_measures">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Humidity"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Humidity_Sensor"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;measures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#measures -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;measures"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#met_tower_has -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;met_tower_has">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Data_Logger"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Meteorological_Tower"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Sensor"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#monitor_control_has -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;monitor_control_has">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Analysis_System"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Control_System"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;DAQ_System"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Monitoring_and_Control_System"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#monitor_control_measures -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;monitor_control_measures">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Measured_Power"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Monitoring_and_Control_System"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Power_Quality"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Turbine_Status"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;measures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#plant_has -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;plant_has">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Analysis_System"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Meteorological_Tower"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Monitoring_and_Control_System"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Physical_Model"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Statistical_Model"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#pressure_sensor_measures -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;pressure_sensor_measures">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Pressure"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Pressure_Sensor"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;measures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#solar_sensor_measures -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;solar_sensor_measures">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Solar_Radiation"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Solar_Radiation_Sensor"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;measures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#temperature_sensor_measures -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;temperature_sensor_measures">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Temperature"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Temperature_Sensor"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;measures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#turbine_generates -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;turbine_generates">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Power"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;generates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#turbine_has -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;turbine_has">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Nacelle"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Rotor"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Tower"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Turbine_Status"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#turbine_utilizes -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;turbine_utilizes">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;utilizes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#utilizes -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;utilizes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#wind_has -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;wind_has">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Horizontal_Wind_Component"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Turbulence"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Vertical_Wind_Component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Direction"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Shear"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Speed"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#wind_power_plant -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;wind_power_plant">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Forecast_Power"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Horizontal_Wind_Component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Humidity"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Measured_Power"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Pressure"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Solar_Radiation"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Temperature"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Turbulence"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;U-component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;V-component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Vertical_Wind_Component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Direction"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Shear"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Speed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#wind_profiler_measures -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;wind_profiler_measures">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Direction"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Profiler"/>
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Speed"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;measures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#wind_vane_measures -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1318785573683;wind_vane_measures">
+        <rdfs:range rdf:resource="&Ontology1318785573683;Wind_Direction"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Vane"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1318785573683;measures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#active_power -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;active_power">
+        <synonymSet>{real power}</synonymSet>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Measured_Power"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#apparent_power -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;apparent_power">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Measured_Power"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#capacity_factor -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;capacity_factor">
+        <synonymSet>{utilisation rate}</synonymSet>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#cut-in_wind_speed -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;cut-in_wind_speed">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#cut-out_wind_speed -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;cut-out_wind_speed">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#date -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;date">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Horizontal_Wind_Component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Humidity"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Pressure"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Solar_Radiation"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Temperature"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Turbulence"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;U-component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;V-component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Vertical_Wind_Component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Direction"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Shear"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Speed"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#direction -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;direction">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Direction"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#error_rate -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;error_rate">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Forecast_Power"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#height -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;height">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Horizontal_Wind_Component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Humidity"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Pressure"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Solar_Radiation"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Temperature"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Turbulence"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;U-component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;V-component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Vertical_Wind_Component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Direction"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Shear"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Speed"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#hub_height -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;hub_height">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#installed_capacity -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;installed_capacity">
+        <synonymSet>{rated capacity, nominal capacity, maximum effect, power capacity, nameplate capacity, wind power capacity}</synonymSet>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#license_date -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;license_date">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#location -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;location">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#model -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;model">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;DAQ_System"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Data_Logger"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Sensor"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#model_output -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;model_output">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Physical_Model"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Statistical_Model"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;name">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#number_of_blades -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;number_of_blades">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#number_of_turbines -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;number_of_turbines">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#owner -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;owner">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#power_curve -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;power_curve">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#rated_power -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;rated_power">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#reactive_power -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;reactive_power">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Measured_Power"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#rotor_diameter -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;rotor_diameter">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#speed -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;speed">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Speed"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#swept_area -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;swept_area">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#type -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;type">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#value -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;value">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Horizontal_Wind_Component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Humidity"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Pressure"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Solar_Radiation"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Temperature"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Turbine_Status"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Turbulence"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;U-component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;V-component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Vertical_Wind_Component"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Direction"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Shear"/>
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Speed"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#voltage_level -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1318785573683;voltage_level">
+        <rdfs:domain rdf:resource="&Ontology1318785573683;Wind_Power_Plant"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Analysis_System -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Analysis_System">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Anemometer -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Anemometer">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Blade -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Blade">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Control_System -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Control_System">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Cup_Anemometer -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Cup_Anemometer">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Anemometer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#DAQ_System -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;DAQ_System">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Data_Logger -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Data_Logger"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Forecast_Power -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Forecast_Power">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Wind_Power"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Forecast_System -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Forecast_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Gearbox -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Gearbox"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Generator -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Generator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#H-axis_Wind_Turbine -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;H-axis_Wind_Turbine">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Horizontal_Wind_Component -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Horizontal_Wind_Component">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Hub -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Hub"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Humidity -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Humidity">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Meteorological_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Humidity_Sensor -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Humidity_Sensor">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#LIDAR_Sensor -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;LIDAR_Sensor">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Wind_Profiler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Measured_Power -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Measured_Power">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Wind_Power"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Meteorological_Data -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Meteorological_Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Meteorological_Tower -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Meteorological_Tower">
+        <synonymSet>{Met Tower, Wind Mast, Mast}</synonymSet>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Monitoring_and_Control_System -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Monitoring_and_Control_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Nacelle -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Nacelle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Numerical_Weather_Prediction -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Numerical_Weather_Prediction">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Physical_Model -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Physical_Model">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Power_Quality -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Power_Quality">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Pressure -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Pressure">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Meteorological_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Pressure_Sensor -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Pressure_Sensor">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Propeller_Anemometer -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Propeller_Anemometer">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Anemometer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#RADAR_Sensor -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;RADAR_Sensor">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Wind_Profiler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Rotor -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Rotor">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#SODAR_Sensor -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;SODAR_Sensor">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Wind_Profiler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Sensor -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Solar_Radiation -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Solar_Radiation">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Meteorological_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Solar_Radiation_Sensor -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Solar_Radiation_Sensor">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Sonic_Anemometer -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Sonic_Anemometer">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Anemometer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Statistical_Model -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Statistical_Model">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Temperature -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Temperature">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Meteorological_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Temperature_Sensor -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Temperature_Sensor">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Tower -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Tower">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Turbine_Status -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Turbine_Status">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Turbulence -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Turbulence">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#U-component -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;U-component">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#V-axis_Wind_Turbine -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;V-axis_Wind_Turbine">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Wind_Turbine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#V-component -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;V-component">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Vertical_Wind_Component -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Vertical_Wind_Component">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Wind -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Wind">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Meteorological_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Wind_Direction -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Wind_Direction">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Wind_Power -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Wind_Power">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <synonymSet>{Wind Power Generation, Energy, Generation, Wind Energy, Wind Generation, Wind Generated Power, Electricity Production}</synonymSet>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Wind_Power_Plant -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Wind_Power_Plant">
+        <synonymSet>{WPP, Wind Plant, Wind Energy Plant, Wind Farm}</synonymSet>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Wind_Profiler -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Wind_Profiler">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Wind_Shear -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Wind_Shear">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Wind_Speed -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Wind_Speed">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Wind_Turbine -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Wind_Turbine">
+        <synonymSet>{Turbine, Wind Turbine Generator, WTG, Generator}</synonymSet>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1318785573683.owl#Wind_Vane -->
+
+    <owl:Class rdf:about="&Ontology1318785573683;Wind_Vane">
+        <rdfs:subClassOf rdf:resource="&Ontology1318785573683;Sensor"/>
+        <synonymSet>{Weather Vane, Weather Cock}</synonymSet>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
